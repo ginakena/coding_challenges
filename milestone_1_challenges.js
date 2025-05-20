@@ -29,5 +29,18 @@ function isNegative (num) {
         return false;
     }
 }
-console.log(isNegative(-23));
-console.log(isNegative(55));
+//console.log(isNegative(-23));
+//console.log(isNegative(55));
+
+//Challenge 5: Can Drive
+function canDrive (name, age) {
+    if (age>18) {
+        return name + ' is old enough to drive'
+    }
+    else {
+        return name + ' is not old enough to drive'
+    }
+}
+console.log(canDrive("Jane", 22));
+console.log(canDrive("June", 12));
+
