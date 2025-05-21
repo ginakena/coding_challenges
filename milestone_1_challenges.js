@@ -44,7 +44,7 @@ function canDrive (name, age) {
 //console.log(canDrive("Jane", 22));
 //console.log(canDrive("June", 12));
 
-//Challenge 6: Write a function called findLargest(a, b, c) that takes three numbers and returns the largest of the three
+//Challenge 6: Write a function called that returns the largest 
 function findLargest (a, b, c) {
     if (a > b && a > c) {
         return a;
@@ -55,7 +55,62 @@ function findLargest (a, b, c) {
     }
  
 }
-console.log(findLargest(5, 9, 3));
-console.log(findLargest(10, 10, 10));
-console.log(findLargest(-1, -5, -3));
+//console.log(findLargest(5, 9, 3));
+//console.log(findLargest(10, 10, 10));
+//console.log(findLargest(-1, -5, -3));
+
+//challenge 7. BMI Calculator
+function calculateBMI(height, width) {
+    let BMI = width / (height*height); 
+    if (BMI < 18.5) {
+    return "Your BMI is ${BMI}-under weight" 
+    } else if (BMI > 18.5 && BMI < 24.9) {
+    return "Your BMI is ${BMI}-normal weight" 
+    } else if(BMI > 25 && BMI < 29.9) {
+     return  "Your BMI is ${BMI}-over weight"
+    } else {
+      return  "Your BMI is ${BMI}-obese"
+    }
+}
+
+//console.log(calculateBMI(68, 1.75));
+//console.log(calculateBMI(85, 1.8));
+
+//challenge 8:  Greeting Based On Time
+
+function greetUser(name, hour) {
+    if (hour >= 5 && hour <= 11) {
+        return `Good morning, ${name}!`;
+    } else if (hour >= 12 && hour <= 17) {
+        return `Good afternoon, ${name}!`;
+    } else if (hour >= 18 && hour <= 21) {
+        return `Good evening, ${name}!`;
+    } else { 
+        return `Good night, ${name}!`;
+    }
+}
+
+//console.log(greetUser("Regina", 9)); 
+
+//challenge 9: 
+
+//challenge 11: Write a function called sumEvenNumbers(n) that takes a number n and returns the sum of all even numbers from 1 up to and including n.
+function sumEvenNumbers (n) {
+    let sum = 0;
+    for (let i =1; i <= n; i++) {
+        if (i % 2 === 0) {
+            sum =+ i;
+        }
+    }
+    return sum;
+}
+
+console.log(sumEvenNumbers(6));
+console.log(sumEvenNumbers(10));
+console.log(sumEvenNumbers(5));
+        
+     
+
+
+ 
 
