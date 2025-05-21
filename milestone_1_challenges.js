@@ -168,9 +168,43 @@ function factorial(n) {
     }
     return result;
 }
-console.log(factorial(0));
-console.log(factorial(4));
-console.log(factorial(6));
+//console.log(factorial(0));
+//console.log(factorial(4));
+//console.log(factorial(6));
+
+//Challenge 14: Write a function called sumMultiples(n, divisor) that returns the sum of all numbers from 1 up to n that are divisible by divisor.
+function sumMultiples(n, divisor) {
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        if (i % divisor === 0) {
+            sum = sum =+ i;
+        }
+    }
+    return sum; 
+}
+//console.log(sumMultiples(10, 2));
+//console.log(sumMultiples(15, 3));
+//console.log(sumMultiples(7, 5));
+
+//Challenge 15: Sum of Digitss
+function sumDigits(num) {
+    let sum = 0;
+    if (num == 0) {
+        return 0;
+    }
+    while (num !=0) {
+        let last = num % 10;
+        sum = sum + last;
+        num = Math.floor(num / 10);
+    }
+    return sum;
+} 
+console.log(sumDigits(123));
+console.log(sumDigits(4567));
+console.log(sumDigits(0));
+
+
+
         
      
 
