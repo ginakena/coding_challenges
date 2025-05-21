@@ -90,7 +90,7 @@ function greetUser(name, hour) {
     }
 }
 
-//console.log(greetUser("Regina", 9)); 
+console.log(greetUser("Regina", 9)); 
 
 //challenge 9: 
 
@@ -105,9 +105,11 @@ function sumEvenNumbers (n) {
     return sum;
 }
 
-console.log(sumEvenNumbers(6));
-console.log(sumEvenNumbers(10));
-console.log(sumEvenNumbers(5));
+//console.log(sumEvenNumbers(6));
+//console.log(sumEvenNumbers(10));
+//console.log(sumEvenNumbers(5));
+
+//Challenge 12: 
         
      
 
