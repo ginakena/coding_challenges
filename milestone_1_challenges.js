@@ -155,10 +155,22 @@ function powerUp(num, times) {
     }
     return result;
 }    
-console.log(powerUp(2, 3));
-console.log(powerUp(5, 0));
-console.log(powerUp(3, 4));
-console.log(powerUp(0));
+//console.log(powerUp(2, 3));
+//console.log(powerUp(5, 0));
+//console.log(powerUp(3, 4));
+//console.log(powerUp(0));
+
+//challenge 13: Write a function called factorial(n) that takes a non-negative integer n and returns the factorial of n — that’s the product of all positive integers from 1 up to n. By definition, factorial of 0 is 1.
+function factorial(n) {
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result = result * i;
+    }
+    return result;
+}
+console.log(factorial(0));
+console.log(factorial(4));
+console.log(factorial(6));
         
      
 
