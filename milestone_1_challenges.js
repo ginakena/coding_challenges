@@ -76,6 +76,8 @@ function calculateBMI(height, width) {
 //console.log(calculateBMI(68, 1.75));
 //console.log(calculateBMI(85, 1.8));
 
+
+
 //challenge 8:  Greeting Based On Time
 
 function greetUser(name, hour) {
@@ -91,6 +93,8 @@ function greetUser(name, hour) {
 }
 
 //console.log(greetUser("Regina", 9)); 
+
+
 
 //challenge 9: Write a function called fizzBuzzCheck(number) that takes a number and returns:
 function fizzBuzzCheck(number) {
@@ -111,6 +115,8 @@ function fizzBuzzCheck(number) {
 }
 //console.log(fizzBuzzCheck(15));  
 
+
+
 //challenge 10:  Finding perimeter
 function perimeter(shape, num) {
     let perimeter
@@ -122,11 +128,8 @@ function perimeter(shape, num) {
     }
     return perimeter;
 }
-console.log(perimeter("s", 7));
-console.log(perimeter("c", 4));
-
-
-
+//console.log(perimeter("s", 7));
+//console.log(perimeter("c", 4));
 
 
 //challenge 11: Write a function called sumEvenNumbers(n) that takes a number n and returns the sum of all even numbers from 1 up to and including n.
@@ -144,7 +147,18 @@ function sumEvenNumbers (n) {
 //console.log(sumEvenNumbers(10));
 //console.log(sumEvenNumbers(5));
 
-//Challenge 12: 
+//Challenge 12: Write a function called powerUp(num, times) that takes two numbers and returns the result of multiplying num by itself times times using only a loop and arithmetic operators (no Math.pow() allowed).
+function powerUp(num, times) {
+    let result = 1;
+    for (let i = 0; i < times; i++) {
+        result = result * num;
+    }
+    return result;
+}    
+console.log(powerUp(2, 3));
+console.log(powerUp(5, 0));
+console.log(powerUp(3, 4));
+console.log(powerUp(0));
         
      
 
