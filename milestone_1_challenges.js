@@ -73,8 +73,8 @@ function calculateBMI(height, width) {
     }
 }
 
-//console.log(calculateBMI(68, 1.75));
-//console.log(calculateBMI(85, 1.8));
+console.log(calculateBMI(68, 1.75));
+console.log(calculateBMI(85, 1.8));
 
 //challenge 8:  Greeting Based On Time
 
@@ -90,7 +90,7 @@ function greetUser(name, hour) {
     }
 }
 
-console.log(greetUser("Regina", 9)); 
+//console.log(greetUser("Regina", 9)); 
 
 //challenge 9: 
 
