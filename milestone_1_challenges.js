@@ -98,22 +98,24 @@ function greetUser(name, hour) {
 
 //challenge 9: Write a function called fizzBuzzCheck(number) that takes a number and returns:
 function fizzBuzzCheck(number) {
-    let output = "";
-    if (number % 3 === 0 && number % 5 === 0) {
-        output = "FizzBuzz";
+      if (number % 3 === 0 && number % 5 === 0) {
+        return  "FizzBuzz";
     }
     else if (number % 3 === 0) {
-        output = "Fizz";
+        return "Fizz";
     }
     else if (number % 5 === 0) {
-        output = "Buzz";
+        return "Buzz";
     }
     else {
-        output = "number";
+        return "number";
     }
 
 }
-//console.log(fizzBuzzCheck(15));  
+console.log(fizzBuzzCheck(15)); 
+console.log(fizzBuzzCheck(3));   
+console.log(fizzBuzzCheck(7));  
+console.log(fizzBuzzCheck(10));  
 
 
 
@@ -199,9 +201,9 @@ function sumDigits(num) {
     }
     return sum;
 } 
-console.log(sumDigits(123));
-console.log(sumDigits(4567));
-console.log(sumDigits(0));
+//console.log(sumDigits(123));
+//console.log(sumDigits(4567));
+//console.log(sumDigits(0));
 
 
 
