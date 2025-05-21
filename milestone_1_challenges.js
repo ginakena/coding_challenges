@@ -73,8 +73,8 @@ function calculateBMI(height, width) {
     }
 }
 
-console.log(calculateBMI(68, 1.75));
-console.log(calculateBMI(85, 1.8));
+//console.log(calculateBMI(68, 1.75));
+//console.log(calculateBMI(85, 1.8));
 
 //challenge 8:  Greeting Based On Time
 
@@ -92,7 +92,42 @@ function greetUser(name, hour) {
 
 //console.log(greetUser("Regina", 9)); 
 
-//challenge 9: 
+//challenge 9: Write a function called fizzBuzzCheck(number) that takes a number and returns:
+function fizzBuzzCheck(number) {
+    let output = "";
+    if (number % 3 === 0 && number % 5 === 0) {
+        output = "FizzBuzz";
+    }
+    else if (number % 3 === 0) {
+        output = "Fizz";
+    }
+    else if (number % 5 === 0) {
+        output = "Buzz";
+    }
+    else {
+        output = "number";
+    }
+
+}
+//console.log(fizzBuzzCheck(15));  
+
+//challenge 10:  Finding perimeter
+function perimeter(shape, num) {
+    let perimeter
+    if (shape === "s") {
+        perimeter = 4 * num;
+    }
+    else if (shape === "c") {
+        perimeter = 6.28 * num;
+    }
+    return perimeter;
+}
+console.log(perimeter("s", 7));
+console.log(perimeter("c", 4));
+
+
+
+
 
 //challenge 11: Write a function called sumEvenNumbers(n) that takes a number n and returns the sum of all even numbers from 1 up to and including n.
 function sumEvenNumbers (n) {
