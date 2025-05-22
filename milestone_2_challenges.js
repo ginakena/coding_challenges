@@ -77,4 +77,23 @@ const sumEvenNumbers = (array) => {
     }
     return sum;
 }
-console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
+//console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+
+//challenge 8: Difference Between Sum of Even and Odd Numbers
+function differenceEvenOdd(array) {
+    let evenArray = array.filter(i => i % 2 ===0)
+    let oddArray = array.filter(i => i % 2 !== 0)
+    let sumEven = 0;
+    let sumOdd = 0;
+
+    for (let i=0; i < evenArray.length; i++) {
+        sumEven += evenArray[i];
+    }
+    for (let i=0; i < oddArray.length; i++) {
+        sumOdd += oddArray[i];
+    }
+    return sumEven-sumOdd;
+
+}
+console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));  
