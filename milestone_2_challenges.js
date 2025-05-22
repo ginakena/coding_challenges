@@ -57,4 +57,11 @@ function countProperties(object) {
     let count = Object.keys(object).length
     return count
 };
-console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
+//console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
+
+//challenge 6: Filter by Length
+function filterByLength(array, minlength) {
+    let items = array.filter(i => i.length >= minlength)
+    return items
+}
+console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5));
