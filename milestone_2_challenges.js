@@ -64,4 +64,17 @@ function filterByLength(array, minlength) {
     let items = array.filter(i => i.length >= minlength)
     return items
 }
-console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5));
+//console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5));
+
+
+//challenge 7: Sum of Even Numbers
+const sumEvenNumbers = (array) => {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+            sum += array[i];
+        }
+    }
+    return sum;
+}
+console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
