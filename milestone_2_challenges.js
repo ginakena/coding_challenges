@@ -39,4 +39,17 @@ return winner;
 //];
 //console.log(findWinner(candidates));
 
-//challenge 4: 
+//challenge 4: Find the longest word
+function findLongestWord(words) {
+    let longestword = words[0]
+    for (let i=0; i < words.length; i++) {
+        if (words[i].length > longestword.length) {
+            longestword = words[i];
+        }
+    }
+    return longestword;
+} 
+console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]));
+
+
+//challenge 5: Write a function called countProperties that takes an object and returns the number of properties (keys) it has.
