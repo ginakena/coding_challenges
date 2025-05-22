@@ -96,4 +96,16 @@ function differenceEvenOdd(array) {
     return sumEven-sumOdd;
 
 }
-console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));  
+//console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));  
+
+//challenge 9: count truthly
+const countTruthly = (object) => {
+    let count = 0;
+    for (let key in object) {
+        if (object[key]) {
+            count = count + 1;
+        }
+    }
+    return count;
+};
+console.log(countTruthly({ a: 0, b: "hello", c: false, d: 42, e: null }));
