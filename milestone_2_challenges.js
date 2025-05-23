@@ -147,3 +147,16 @@ function reverseLinearSearch(array, target) {
 
 //console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));  
 //console.log(reverseLinearSearch([5, 3, 7, 1, 4], 10));
+
+//Challenge 13: Write a function called linearSearchAll that takes an array and a value. It should return an array of all the indices where the value appears. If the value isn’t found, return an empty array.
+function linearSearchAll(array, target) {
+    let indices = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === target) {
+            indices.push(i);
+        }
+    }
+    return indices;
+}
+console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
+console.log(linearSearchAll([5, 3, 7, 1, 4], 10));
