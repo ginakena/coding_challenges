@@ -187,4 +187,26 @@ const removeDuplicates = (array) => {
     } 
     return noDuplicateArray;
 };
-console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
+//console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
+
+//challenge 16: Write a function called mostFrequent that takes an array and returns the value that appears most frequently. If there’s a tie, return any one of the most frequent values.
+const mostFrequent = (array) => {
+    let maxcount = 0;
+    let result = array[0];
+    for (let i = 0; i < array.length; i++) {
+        let count = 0;
+   
+    for (let j = 0; j < array.length; j++) {
+        if (array[i] == array[j]) {
+            count++;
+        } 
+       if (count > maxcount) {
+        maxcount = count;
+       result = array[i];
+       } 
+    } 
+}
+return result;
+};
+console.log(mostFrequent([1, 2, 2, 3, 3, 3, 4]));
+console.log(mostFrequent(["apple", "banana", "apple", "orange", "banana", "apple"]));
