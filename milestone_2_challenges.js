@@ -158,5 +158,21 @@ function linearSearchAll(array, target) {
     }
     return indices;
 }
-console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
-console.log(linearSearchAll([5, 3, 7, 1, 4], 10));
+//console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
+//console.log(linearSearchAll([5, 3, 7, 1, 4], 10));
+
+//challenge 14: Write a function called countOccurrences that takes an array of strings and returns an object where each key is a string from the array and the corresponding value is the number of times it appears.
+function countOccurrences(array) {
+    let obj = {};
+    for (let i = 0; i < array.length; i++) {
+        const item = array[i];
+        if (obj[item]) {
+            obj[item]++;
+        }
+        else {
+            obj[item] = 1;
+        }
+    }
+    return obj;
+}
+console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]));
