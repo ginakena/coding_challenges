@@ -175,4 +175,16 @@ function countOccurrences(array) {
     }
     return obj;
 }
-console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]));
+//console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]));
+
+//challenge 15: Write a function called removeDuplicates that takes an array and returns a new array with all duplicate values removed. Preserve the original order of elements.
+const removeDuplicates = (array) => {
+    const noDuplicateArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (!noDuplicateArray.includes(array[i])) {
+            noDuplicateArray.push(array[i]);
+        }
+    } 
+    return noDuplicateArray;
+};
+console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
